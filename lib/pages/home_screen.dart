@@ -78,7 +78,7 @@ class BottomSectionWidget extends StatelessWidget {
                     middleText: 'Should this task be deleted?',
                     middleTextStyle: const TextStyle(fontSize: 16),
                     backgroundColor: Colors.blueGrey[100],
-                    radius: 15,
+                    radius: 40,
                     textCancel: 'No',
                     cancelTextColor: Colors.black,
                     onCancel: () {
@@ -128,10 +128,12 @@ class BottomSectionWidget extends StatelessWidget {
             },
             separatorBuilder: (context, index) {
               return const Divider(
-                color: Colors.black45,
+                color: Colors.black87,
                 height: 1,
               );
             },
+
+            // number
             itemCount: Get.find<TaskController>().tasks.length,
           ),
         ),
